@@ -138,7 +138,7 @@ Data-efficient methods:
 Another aspect is when to update the policy
 
 * The first method is to collect all the episodes starting from a state-pair and use the average return to approximate the action value.
-* The second method uses the return of a single episode ot approximate the action value. **episode by episode**
+* The second method uses the return of a single episode to approximate the action value. **episode by episode**
 
 ## MC $\epsilon$ - Greedy
 
