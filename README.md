@@ -1,5 +1,7 @@
 # Mathematical Foundation of Reinforcement Learning
 
+All courses can be founded from [Video Links](https://www.bilibili.com/video/BV1sd4y167NS)
+
 ## outline
 
 ![outline](assets/outline.png)
