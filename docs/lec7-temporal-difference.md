@@ -29,7 +29,7 @@ $$
 Then, the problem becomes a root-finding problem: $g(w)=0$ . The corresponding RM algorithm is
 
 $$
-w_{k+1}=w_k-\alpha_k - \alpha_k\tilde{g}(w_k, \eta_k) = w_k-\alpha_k[w_k-(r_k + \gamma v(x_k)]
+w_{k+1}=w_k- \alpha_k\tilde{g}(w_k, \eta_k) = w_k-\alpha_k[w_k-(r_k + \gamma v(x_k))]
 $$
 
 ## TD algorithm of state values
@@ -47,7 +47,7 @@ $$
 \end{align}
 $$
 
-where $t=0,1,2,\dots$ Here, $v_t(s_t)$ is the estimated state value of $v_\pi(s_t)$ $\alpha_t(s_t)$ is the learning rate of s_t at time $t$ .
+where $t=0,1,2,\dots$ Here, $v_t(s_t)$ is the estimated state value of $v_\pi(s_t)$ , $\alpha_t(s_t)$ is the learning rate of s_t at time $t$ .
 
 * At time $t$ , only the value of the visited state $s_t$ is updated whereas the values of the unvisited states $s\ne s_t$ remain unchanged.
 
