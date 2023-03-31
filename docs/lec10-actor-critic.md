@@ -76,7 +76,7 @@ our goal: select an optimal baseline $b$ to minimize $\mathrm{var}(X)$ .
 The optimal baseline that can be minimize $\mathrm{var} (X)$ is, for any $s\in\mathcal{S}$
 
 $$
-b^*(s)=\frac{\mathbb{E}_{A\sim\pi}\left[\|\nabla_\theta\ln\pi(A|s,\theta_t) \|^2 q(s,A) \right]}{\mathbb{E}_{A\sim\pi}\left[\|\nabla_theta\ln\pi(A|s,\theta_t) \|^2 \right]}
+b^*(s)=\frac{\mathbb{E}_{A\sim\pi}\left[\|\nabla_\theta\ln\pi(A|s,\theta_t) \|^2 q(s,A) \right]}{\mathbb{E}_{A\sim\pi}\left[\|\nabla_\theta\ln\pi(A|s,\theta_t) \|^2 \right]}
 $$
 
 * Although this baseline is optimal, it is complex.
