@@ -53,7 +53,7 @@ $$
 J(\theta) = \mathbb{E}\left[\sum_{t=0}^\infty \gamma^tR_{t+1} \right] = \bar{v}_\pi
 $$
 
-How to select the distributino $d$ ?
+How to select the distribution $d$ ?
 
 The first case is the $d$ is independent of the policy $\pi$
 
@@ -133,7 +133,7 @@ $$
 ## Gradient of the metrics
 
 $$
-\nabla_\theta = \sum_{s\in\mathcal{S}}\eta(s)\sum_{a\in\mathcal{A}}\nabla_\theta \pi(a|s,\theta)q_\pi(s,a)
+\nabla_\theta J(\theta) = \sum_{s\in\mathcal{S}}\eta(s)\sum_{a\in\mathcal{A}}\nabla_\theta \pi(a|s,\theta)q_\pi(s,a)
 $$
 
 where
@@ -146,7 +146,7 @@ A compact and useful form of the gradient:
 
 $$
 \begin{align}
-\nonumber \nabla_\theta & = \sum_{s\in\mathcal{S}}\eta(s)\sum_{a\in\mathcal{A}}\nabla_\theta \pi(a|s,\theta)q_\pi(s,a)\\
+\nonumber \nabla_\theta J(\theta) & = \sum_{s\in\mathcal{S}}\eta(s)\sum_{a\in\mathcal{A}}\nabla_\theta \pi(a|s,\theta)q_\pi(s,a)\\
 \nonumber & = \mathbb{E}[\nabla_\theta \ln\pi(A|S,\theta)q_\pi(S,A)]
 \end{align}
 $$
