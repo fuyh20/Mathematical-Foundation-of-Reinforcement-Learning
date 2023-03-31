@@ -113,7 +113,7 @@ We can use tabular representation to represent reward. deterministic cases.
 Mathematical description: conditional probability
 
 * Intution: At state $s_1$, if we choose action $a_1$, the reward is $-1$
-* Math: $p(r=1|s_1, a_1) = 1 \quad and \quad  p(r\ne -1|s_1, a_1) = 0$
+* Math: $p(r=-1|s_1, a_1) = 1 \quad and \quad  p(r\ne -1|s_1, a_1) = 0$
 
 ## Trajectory and return
 
