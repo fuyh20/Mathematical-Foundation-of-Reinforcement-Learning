@@ -193,7 +193,7 @@ $$
 g(w)=\nabla_w J(w)=\mathbb{E}[\nabla_w f(w,X)]
 $$
 
-Then, the aim of SGD is to find the root of g(w) = 0
+Then, the aim of SGD is to find the root of $g(w) = 0$
 
 What we can measure is
 
@@ -207,7 +207,7 @@ $$
 Then, the RM algorithm for solving $g(w)=0$ is
 
 $$
-w_{k+1}=w_k-a_k\tilde{g}(w_k, \eta_k)=w-k-a_k\nabla_wf(w_k,x_k)
+w_{k+1}=w_k-a_k\tilde{g}(w_k, \eta_k)=w_k-a_k\nabla_wf(w_k,x_k)
 $$
 
 Therefore, SGD is a special RM algorithm.
@@ -218,7 +218,7 @@ $$
 \delta_k\le\frac{| \overbrace{\nabla_wf(w_k,x_k)}^{\mathrm{stochastic \  gradient}} - \overbrace{\mathbb{E}[\nabla_wf(w_k,X)] }^{\mathrm{true\ gradient}}|}{\underbrace{c|w_k-w^*|}_{\mathrm{distance\ the\ optimal\ solution}}}
 $$
 
-The above equation sugggests an interesting convergence pattern of SGD,
+The above equation suggests an interesting convergence pattern of SGD,
 
 * The relative error $\delta_k$ is inversely proportional to $|w_k-w^*|$
 * When $|w_k-w^*|$ is large, $\delta_k$ is small and SGD behaves like GD
