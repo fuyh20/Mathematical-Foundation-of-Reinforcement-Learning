@@ -59,7 +59,7 @@ $$
 
 Remarks:
 
-* It is a function of $s$ . It is a conditional expectation with the condition that the state starts form $s$ .
+* It is a function of $s$ . It is a conditional expectation with the condition that the state starts from $s$ .
 * It is based on the policy $\pi$ . For a different policy, the state value may be different
 * It represents the "value" of a state. If the state is greater, then the policy is better because greater cumulative rewards can be obtained.
 
